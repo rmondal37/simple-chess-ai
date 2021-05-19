@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Home Page</title>
 </head>
 
 <body>
-
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="#">GameStop</a>
@@ -40,35 +40,39 @@
         </div>
     </nav>
 
-    <div id="board" class="board"></div>
-    <div class="info">
-        Search depth:
-        <select id="search-depth">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3" selected>3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
 
-        <br>
-        <span>Positions evaluated: <span id="position-count"></span></span>
-        <br>
-        <span>Time: <span id="time"></span></span>
-        <br>
-        <span>Positions/s: <span id="positions-per-s"></span> </span>
-        <br>
-        <br>
-        <div id="move-history" class="move-history">
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcome to the GameStop!!</h1>
+            <h4>
+                Here we have a number of curated games for you to enjoy!!
+            </h4>
+
+            <a href="index.html">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="chess.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Play Chess!</p>
+                    </div>
+                </div>
+            </a>
+
+
         </div>
     </div>
-    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
-    <script src="lib/chessboardjs/js/chess.js"></script>
-    <script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
-    <script src="script.js"></script>
-    <script>
 
-    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
